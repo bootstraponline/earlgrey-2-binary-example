@@ -13,6 +13,9 @@
 		F94281C8215B164400903058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94281C7215B164400903058 /* Assets.xcassets */; };
 		F94281CB215B164400903058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94281C9215B164400903058 /* LaunchScreen.storyboard */; };
 		F94281D6215B164400903058 /* appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94281D5215B164400903058 /* appUITests.swift */; };
+		F94ED700215B337A00C5505A /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F94ED6FF215B337A00C5505A /* libTestLib.a */; };
+		F94ED703215B34B300C5505A /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F94ED702215B34B300C5505A /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F94ED706215B355800C5505A /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94ED705215B355800C5505A /* EarlGrey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +28,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F94ED701215B348700C5505A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TARGET_BUILD_DIR)/../../app.app/Frameworks";
+			dstSubfolderSpec = 0;
+			files = (
+				F94ED703215B34B300C5505A /* AppFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F94281BD215B164300903058 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94281C0215B164300903058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +52,10 @@
 		F94281D1215B164400903058 /* appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94281D5215B164400903058 /* appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appUITests.swift; sourceTree = "<group>"; };
 		F94281D7215B164400903058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F94ED6FF215B337A00C5505A /* libTestLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestLib.a; path = "../ios-frameworks/libTestLib.a"; sourceTree = "<group>"; };
+		F94ED702215B34B300C5505A /* AppFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppFramework.framework; path = "../ios-frameworks/AppFramework.framework"; sourceTree = "<group>"; };
+		F94ED705215B355800C5505A /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
+		F94ED708215B359500C5505A /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94ED700215B337A00C5505A /* libTestLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +80,11 @@
 		F94281B4215B164300903058 = {
 			isa = PBXGroup;
 			children = (
+				F94ED702215B34B300C5505A /* AppFramework.framework */,
 				F94281BF215B164300903058 /* app */,
 				F94281D4215B164400903058 /* appUITests */,
 				F94281BE215B164300903058 /* Products */,
+				F94ED6FE215B337A00C5505A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,8 +115,18 @@
 			children = (
 				F94281D5215B164400903058 /* appUITests.swift */,
 				F94281D7215B164400903058 /* Info.plist */,
+				F94ED705215B355800C5505A /* EarlGrey.swift */,
+				F94ED708215B359500C5505A /* bridge.h */,
 			);
 			path = appUITests;
+			sourceTree = "<group>";
+		};
+		F94ED6FE215B337A00C5505A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F94ED6FF215B337A00C5505A /* libTestLib.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +156,7 @@
 				F94281CD215B164400903058 /* Sources */,
 				F94281CE215B164400903058 /* Frameworks */,
 				F94281CF215B164400903058 /* Resources */,
+				F94ED701215B348700C5505A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -206,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94ED706215B355800C5505A /* EarlGrey.swift in Sources */,
 				F94281D6215B164400903058 /* appUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +402,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,7 +420,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -398,17 +433,25 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H86XEK7ZTM;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks/**";
 				INFOPLIST_FILE = appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.appUITests;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.appUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/bridge.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = app;
+				USER_HEADER_SEARCH_PATHS = (
+					"../eDistantObject/**",
+					"../EarlGrey/**",
+				);
 			};
 			name = Debug;
 		};
@@ -418,17 +461,25 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H86XEK7ZTM;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks/**";
 				INFOPLIST_FILE = appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.appUITests;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.appUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/bridge.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = app;
+				USER_HEADER_SEARCH_PATHS = (
+					"../eDistantObject/**",
+					"../EarlGrey/**",
+				);
 			};
 			name = Release;
 		};
