@@ -1,0 +1,7 @@
+[submodule "EarlGrey"]
+	path = EarlGrey
+	url = https://github.com/google/EarlGrey.git
+	branch = earlgrey2
+[submodule "eDistantObject"]
+	path = eDistantObject
+	url = https://github.com/google/eDistantObject.git
