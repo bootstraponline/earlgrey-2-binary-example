@@ -433,14 +433,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H86XEK7ZTM;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks/**";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks";
 				INFOPLIST_FILE = appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks/**";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.appUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,14 +461,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H86XEK7ZTM;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks/**";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks";
 				INFOPLIST_FILE = appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks/**";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.appUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
