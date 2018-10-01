@@ -1,11 +1,3 @@
-//
-//  appTests.swift
-//  appTests
-//
-//  Created by Matthew Edwards on 10/1/18.
-//  Copyright © 2018 instructure. All rights reserved.
-//
-
 import XCTest
 
 class appTests: XCTestCase {
