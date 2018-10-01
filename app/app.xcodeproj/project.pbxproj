@@ -17,7 +17,6 @@
 		F94ED703215B34B300C5505A /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F94ED702215B34B300C5505A /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F94ED706215B355800C5505A /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94ED705215B355800C5505A /* EarlGrey.swift */; };
 		F9B7DEA321626EB000FEA108 /* appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7DEA221626EB000FEA108 /* appTests.swift */; };
-		F9CD11A22162BAEF0012E2D8 /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94ED702215B34B300C5505A /* AppFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9CD11A22162BAEF0012E2D8 /* AppFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
