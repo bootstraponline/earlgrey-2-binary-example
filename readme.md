@@ -26,7 +26,6 @@ Follow instructions in the [setup guide](https://github.com/google/EarlGrey/blob
 
 Follow setup guide again. This time reference the prebuilt binaries.
 
-- In the Application target, `Link Binary With Libraries`, link to `AppFramework.framework`
 - In the Build Phases of your test target, drag and drop the prebuilt libTestLib.a into the "Link Binary With Libraries" section.
 - In Build Settings add -ObjC to Other Linker Flags
 - Point `User Header Search Paths` at:
