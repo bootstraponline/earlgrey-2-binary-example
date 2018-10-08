@@ -2,6 +2,10 @@
 
 set -euxo pipefail
 
+if ! [ -x "$(command -v xcpretty)" ]; then
+  gem install xcpretty
+fi
+
 DD="dd_tmp"
 SCHEME="appUITests"
 ZIP="ios_earlgrey2.zip"
@@ -12,7 +16,8 @@ xcodebuild build-for-testing \
   -project ./app/app.xcodeproj \
   -scheme "$SCHEME" \
   -derivedDataPath "$DD" \
-  -sdk iphoneos
+  -sdk iphoneos \
+  | xcpretty
 
 pushd "$DD/Build/Products"
 zip -r "$ZIP" *-iphoneos *.xctestrun
