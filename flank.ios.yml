@@ -1,0 +1,14 @@
+gcloud:
+  xcode-version: 10.0
+  test: ./ios_earlgrey2.zip
+  xctestrun-file: ./dd_tmp/Build/Products/appUITests_iphoneos12.0-armv4t.xctestrun
+  results-bucket: tmp_flank
+  device:
+  - model: iphone8
+    version: 11.2
+    orientation: portrait
+    locale: en_US
+
+flank:
+  testShards: 1
+  testRuns: 1
