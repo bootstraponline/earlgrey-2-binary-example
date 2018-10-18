@@ -67,6 +67,7 @@
 		F9B7DEA021626EAF00FEA108 /* appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B7DEA221626EB000FEA108 /* appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appTests.swift; sourceTree = "<group>"; };
 		F9B7DEA421626EB000FEA108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BF9685217948F40036438F /* app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = app.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +121,7 @@
 		F94281BF215B164300903058 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				F9BF9685217948F40036438F /* app.entitlements */,
 				F94281C0215B164300903058 /* AppDelegate.swift */,
 				F94281C2215B164300903058 /* ViewController.swift */,
 				F94281C4215B164300903058 /* Main.storyboard */,
@@ -227,6 +229,11 @@
 				TargetAttributes = {
 					F94281BC215B164300903058 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					F94281D0215B164400903058 = {
 						CreatedOnToolsVersion = 10.0;
@@ -476,7 +483,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.eg2Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,7 +503,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.eg2Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
