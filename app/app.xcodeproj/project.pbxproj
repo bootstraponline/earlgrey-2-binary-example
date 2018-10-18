@@ -468,7 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H86XEK7ZTM;
+				DEVELOPMENT_TEAM = B6333T4PXQ;
 				FRAMEWORK_SEARCH_PATHS = "../ios-frameworks/**";
 				INFOPLIST_FILE = app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
@@ -488,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H86XEK7ZTM;
+				DEVELOPMENT_TEAM = B6333T4PXQ;
 				FRAMEWORK_SEARCH_PATHS = "../ios-frameworks/**";
 				INFOPLIST_FILE = app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
@@ -508,7 +508,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H86XEK7ZTM;
+				DEVELOPMENT_TEAM = B6333T4PXQ;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks";
 				INFOPLIST_FILE = appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,7 +536,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H86XEK7ZTM;
+				DEVELOPMENT_TEAM = B6333T4PXQ;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks";
 				INFOPLIST_FILE = appUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -564,7 +564,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H86XEK7ZTM;
+				DEVELOPMENT_TEAM = B6333T4PXQ;
 				INFOPLIST_FILE = appTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,7 +584,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H86XEK7ZTM;
+				DEVELOPMENT_TEAM = B6333T4PXQ;
 				INFOPLIST_FILE = appTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
