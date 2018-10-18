@@ -13,6 +13,7 @@ ZIP="ios_earlgrey2.zip"
 rm -rf "$DD"
 
 xcodebuild build-for-testing \
+  -allowProvisioningUpdates \
   -project ./app/app.xcodeproj \
   -scheme "$SCHEME" \
   -derivedDataPath "$DD" \
