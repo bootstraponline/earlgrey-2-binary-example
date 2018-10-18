@@ -525,7 +525,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.appUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.appUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/bridge.h";
 				SWIFT_VERSION = 4.2;
@@ -553,7 +553,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ios-frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bootstraponline.appUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instructure.appUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/bridge.h";
 				SWIFT_VERSION = 4.2;
