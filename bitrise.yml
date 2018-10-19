@@ -34,7 +34,7 @@ workflows:
         title: Build for FTL
     - script:
         inputs:
-        - content: |
+        - content: |-
             #!/usr/bin/env bash
             set -ex
 
