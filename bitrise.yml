@@ -23,8 +23,15 @@ workflows:
             GCLOUD_DIR="$HOME/.config/gcloud/"
             mkdir -p "$GCLOUD_DIR"
             echo "$GCLOUD_KEY" | base64 --decode > "$GCLOUD_DIR/application_default_credentials.json"
-    - certificate-and-profile-installer@1.10.1: {}
-    - xcode-build-for-test: {}
+    - certificate-and-profile-installer: {}
+    - script:
+        inputs:
+        - content: |-
+            #!/usr/bin/env bash
+            set -ex
+
+            ./build_ftl.sh
+        title: Build for FTL
     - script:
         inputs:
         - content: |
@@ -41,7 +48,7 @@ workflows:
             set -ex
 
             java -jar ./flank.jar firebase test ios run
-    - script@1.1.5:
+    - script:
         title: Copy results/
         inputs:
         - content: |-
@@ -50,7 +57,7 @@ workflows:
 
             echo "Copying flank results to deploy dir"
             cp -r ./results/*/* $BITRISE_DEPLOY_DIR
-    - deploy-to-bitrise-io@1.3.18: {}
+    - deploy-to-bitrise-io: {}
 app:
   envs:
   - opts:
